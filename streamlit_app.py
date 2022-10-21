@@ -52,4 +52,4 @@ streamlit.text(my_data_rows)
 #Allow the end user to add a fruit to the list. 
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 # Display the table on the page.
-add_my_fruit = my_fruit_load.set_index('Fruit')
+add_my_fruit = my_fruit_load_list.set_index('Fruit')
