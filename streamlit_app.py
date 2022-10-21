@@ -49,5 +49,4 @@ streamlit.text("The fruit load list contains")
 streamlit.text(my_data_rows)
   
   
-# Display the table on the page.
-streamlit.dataframe (fruit_load_list)
+
