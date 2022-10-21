@@ -48,6 +48,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit load list contains")
 streamlit.text(my_data_rows)
   
-add_my_fruit = ('banana',), ('cherry',), ('strawberry',), ('pineapple',), ('apple',), ('mango',), ('coconut',), ('plum',), ('avocado',), ('starfruit',)
-streamlit.multiselect("Pick some add_my_fruit:", list(fruit_load_list.index))
 
+import pandas
+add_my_fruit = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+streamlit.dataframe(add_my_fruit_list)
