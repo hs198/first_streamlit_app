@@ -50,4 +50,4 @@ streamlit.text(my_data_rows)
   
   
 # Display the table on the page.
-streamlit.multiselect("Pick some fruits:", list(fruit_load_list.index))
+streamlit.dataframe (fruit_load_list)
