@@ -49,6 +49,7 @@ streamlit.text("The fruit load list contains")
 streamlit.text(my_data_rows)
   
 # Allow the end user to add a fruit to the list
+
 import pandas
-add_my_fruit = pandas.read_Table("fruit_load_list")
+add_my_fruit = pandas.read_Table("my_cur.execute("SELECT * from fruit_load_list ")fruit_load_list")
 streamlit.multiselect("Pick some fruits:", list(add_my_fruit.index))
