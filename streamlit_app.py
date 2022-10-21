@@ -50,5 +50,5 @@ streamlit.text(my_data_rows)
   
 
 import pandas
-add_my_fruit = pandas.fruit_load_list
-streamlit.dataframe(add_my_fruit_list)
+add_my_fruit = pandas.('banana',), ('cherry',), ('strawberry',), ('pineapple',), ('apple',), ('mango',), ('coconut',), ('plum',), ('avocado',), ('starfruit',)
+add_my_fruit = add_my_fruit.set_index('fruit')
