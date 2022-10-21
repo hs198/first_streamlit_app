@@ -50,4 +50,4 @@ streamlit.text(my_data_rows)
   
   
 # Display the table on the page.
-add_my_fruit = my_fruit_load_list.set_index('Fruit')
+streamlit.multiselect("Pick some fruits:", list(fruit_load_list.index))
