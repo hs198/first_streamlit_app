@@ -44,14 +44,14 @@ import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT * from fruit_load_list ")
-my_data_rows = my_cur.fetchall()
-streamlit.text("The fruit load list contains")
-streamlit.text(my_data_rows)
+my_data_row = my_cur.fetchone()
+streamlit.header("The fruit load list contains")
+streamlit.text(my_data_row)
   
 # Allow the end user to add a fruit to the list
-import pandas
-add_my_fruit = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
-add_my_fruit = add_my_fruit.set_index('fruit')
+#import pandas
+#add_my_fruit = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+#add_my_fruit = add_my_fruit.set_index('fruit')
 
 
 
