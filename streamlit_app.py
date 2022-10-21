@@ -50,5 +50,5 @@ streamlit.text(my_data_rows)
   
 
 import pandas
-add_my_fruit = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+add_my_fruit = pandas.fruit_load_list
 streamlit.dataframe(add_my_fruit_list)
