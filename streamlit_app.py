@@ -50,5 +50,5 @@ streamlit.text(my_data_rows)
   
 
 import pandas
-add_my_fruit = pandas.read_Table("SELECT * from fruit_load_list")
+add_my_fruit = pandas.read_Table('banana',), ('cherry',), ('strawberry',), ('pineapple',), ('apple',), ('mango',), ('coconut',), ('plum',), ('avocado',), ('starfruit',)
 
