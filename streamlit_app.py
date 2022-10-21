@@ -47,4 +47,8 @@ my_cur.execute("SELECT * from fruit_load_list ")
 my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit load list contains")
 streamlit.text(my_data_rows)
-                 
+  
+  
+# Let's put a pick list here so they can pick the fruit they want to include 
+streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
+# Display the table on the page.
