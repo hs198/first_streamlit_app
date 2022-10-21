@@ -50,5 +50,5 @@ streamlit.text(my_data_rows)
   
 
 import pandas
-add_my_fruit = pandas.read_table ('fruit_load_list')
-add_my_fruit = add_my_fruit.set_index('fruit')
+add_my_fruit = pandas.read_Table("SELECT * from fruit_load_list")
+
