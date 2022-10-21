@@ -51,5 +51,5 @@ streamlit.text(my_data_rows)
 # Allow the end user to add a fruit to the list
 
 import pandas
-add_my_fruit = pandas.read_Table("fruit_load_list, schema=Public, Database=PC_RIVERY_DB')
+add_my_fruit = pandas.read_Table("fruit_load_list, schema=Public, Database=PC_RIVERY_DB")
 streamlit.multiselect("Pick some fruits:", list(add_my_fruit.index))
