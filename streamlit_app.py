@@ -48,7 +48,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit load list contains")
 streamlit.text(my_data_rows)
   
-
+# Allow the end user to add a fruit to the list
 import pandas
-add_my_fruit = pandas.read_Table('banana',), ('cherry',), ('strawberry',), ('pineapple',), ('apple',), ('mango',), ('coconut',), ('plum',), ('avocado',), ('starfruit',)
-
+add_my_fruit = pandas.read_Table("fruit_load_list")
+streamlit.multiselect("Pick some fruits:", list(add_my_fruit.index))
