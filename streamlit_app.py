@@ -41,7 +41,8 @@ fruit_choice = streamlit.text_input('What fruit would you like information about
 
 import snowflake.connector
 from urllib.error import URLError
-
+#New Section to display fruityvice api response
+streamlit.header('Fruitvice Advice!')
 
 
 # Don't run anything past here while we troubleshoot
