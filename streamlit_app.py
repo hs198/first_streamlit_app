@@ -3,7 +3,7 @@
 
 
 
-#import streamlit
+import streamlit
 
 streamlit.header ('Breakfast favorites')
 streamlit.text ('🥣 Omega3 & blueberry Oatmeal')
