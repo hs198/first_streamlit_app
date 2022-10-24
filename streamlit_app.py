@@ -3,7 +3,7 @@
 
 
 
-import streamlit
+#import streamlit
 
 streamlit.header ('Breakfast favorites')
 streamlit.text ('🥣 Omega3 & blueberry Oatmeal')
@@ -11,7 +11,7 @@ streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
 streamlit.text('🐔 Hard- boiled Free-Range Egg')
 streamlit.text('🥑Avacado Toast')
 
-import pandas
+#import pandas
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 streamlit.dataframe(my_fruit_list)
 
@@ -39,15 +39,16 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 #streamlit.write('The user entered ', fruit_choice)
 
-import snowflake.connector
+#import snowflake.connector
 from urllib.error import URLError
+
 
 
 # Don't run anything past here while we troubleshoot
 streamlit.stop
 
 
-import snowflake.connector
+#import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 
@@ -58,7 +59,7 @@ streamlit.dataframe(my_data_rows)
   
 #Allow the end user to add a fruit to the list
 
-import pandas
+#import pandas
 add_my_fruit = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 add_my_fruit = add_my_fruit.set_index('Fruit')
 
