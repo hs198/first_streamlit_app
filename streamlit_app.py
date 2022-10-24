@@ -1,8 +1,4 @@
-#import streamlit
-#import pandas
-#import requests
-import snoflake.connector
-from urllib.error import URLError
+
 
 
 
@@ -44,18 +40,7 @@ fruit_choice = streamlit.text_input('What fruit would you like information about
 #streamlit.write('The user entered ', fruit_choice)
 
 
-#New Section to display fruitvice api response
-streamlit.header('Fruityvice Fruit Advice!')
-try:
-  fruit_choice=streamlit.text_input('what fruit would you like informtion about?')
-  if not fruit_choice:
-    streamlit.error("Please select a fruit to get information.")
-    else:
-     fruityvice_response= requests.get("https://fruityvice.com/api/fruit/" +fruit_choice)
-     fruityvice_normalized = pandas.json_normalize(fruityvice_response.jason())
-     streamlit.dataframe(fruityvice__normalized)
-     expect URLERROR as e:
-     streamlit.error()
+
 
 # Don't run anything past here while we troubleshoot
 streamlit.stop
