@@ -22,26 +22,40 @@ streamlit.dataframe(my_fruit_list)
 # Let's put a pick list here so they can pick the fruit they want to include 
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 # Display the table on the page.
-
 #import requests
-#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-#streamlit.text(fruityvice_response)
 
+#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+
+#streamlit.text(fruityvice_response)
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 streamlit.text(fruityvice_response)
 
 #New Section to display fruitvice api response
-streamlit.header("Fruityvice Fruit Advice!")
+#streamlit.header("Fruityvice Fruit Advice!")
 
 # write your own comment -what does the next line do? 
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+#fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
                                    
 # write your own comment - what does this do?
-streamlit.dataframe(fruityvice_normalized)
+#streamlit.dataframe(fruityvice_normalized)
 
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
-streamlit.write('The user entered ', fruit_choice)
+#streamlit.write('The user entered ', fruit_choice)
+
+
+#New Section to display fruitvice api response
+streamlit.header('Fruityvice Fruit Advice!')
+try:
+  fruit_choice=streamlit.text_input('what fruit would you like informtion about?')
+  if not fruit_choice:
+    streamlit.error("Please select a fruit to get information.")
+    else:
+      fruityvice_response= requests.get("https://fruityvice.com/api/fruit/" +fruit_choice)
+      fruityvice_normalized = pandas.json_normalize(fruityvice_response.jason())
+      streamlit.dataframe(fruityvice__normalized)
+      expect URLERROR as E:
+        streamlit.error()
 
 # Don't run anything past here while we troubleshoot
 streamlit.stop
