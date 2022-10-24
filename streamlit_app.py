@@ -78,7 +78,7 @@ fruit_choice = streamlit.text_input('What fruit would you like information about
 
 
 # Don't run anything past here while we troubleshoot
-streamlit.stop
+#streamlit.stop
 	streamlit.header("View Our Fruit Lsit - Add Your Favorites!")
 	#Snowflake-related functions
 	def get_fruit_load_list():
