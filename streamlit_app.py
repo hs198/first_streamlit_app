@@ -44,7 +44,7 @@ from urllib.error import URLError
 #New Section to display fruityvice api response
 streamlit.header('Fruitvice Advice!')
 try:
-  fruit_choice = streamlit.text_input('what fruit would you like information about?'')
+  fruit_choice = streamlit.text_input('what fruit would you like information about?')
 
 
 # Don't run anything past here while we troubleshoot
