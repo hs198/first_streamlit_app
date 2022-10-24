@@ -58,7 +58,7 @@ add_my_fruit = add_my_fruit.set_index('Fruit')
 #Let's put a pick ist here so they can pick the fruit they want to include
 streamlit.multiselect("Pick somefruits:",list(add_my_fruit.index))
 
-streamlit.write ('Thanks for adding ', add_my_fruit
+streamlit.write ('Thanks for adding ', add_my_fruit)
 
 #This will not work correctly, but just go with it for now
 #my_cur.execute("insert into fruit_load_list values ('from streamlit')")
