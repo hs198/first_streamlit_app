@@ -61,15 +61,6 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 #streamlit.write('The user entered ', fruit_choice)
 
-# New section to dispaly  fruitvice api response
-streamlit.header('Fruityvice Fruit Advise!')
-try:
-  fruit_choice = streamlit.text_input('What fruit would you like information about?')
-  if not fruit_choice:
-     streamlit.error("Please select a fruit to get information.")
-  else:
-      back_from_function = get_fruityvice_data(fruit_choice)
-      streamlit.dataframe(back_from_function)
 
 
 
