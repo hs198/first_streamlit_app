@@ -54,7 +54,7 @@ try:
       fruityvice_response= requests.get("https://fruityvice.com/api/fruit/" +fruit_choice)
       fruityvice_normalized = pandas.json_normalize(fruityvice_response.jason())
       streamlit.dataframe(fruityvice__normalized)
-      expect URLERROR as E:
+      expect URLERROR as e:
         streamlit.error()
 
 # Don't run anything past here while we troubleshoot
