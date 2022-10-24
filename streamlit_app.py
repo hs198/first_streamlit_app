@@ -106,15 +106,15 @@ def get_fruit_load_list():
 #Allow the end user to add a fruit to the list
 
 #import pandas
-add_my_fruit = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
-add_my_fruit = add_my_fruit.set_index('Fruit')
+#add_my_fruit = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+#add_my_fruit = add_my_fruit.set_index('Fruit')
 
 #Let's put a pick ist here so they can pick the fruit they want to include
-streamlit.multiselect("Pick somefruits:",list(add_my_fruit.index))
+#streamlit.multiselect("Pick somefruits:",list(add_my_fruit.index))
 
-streamlit.write ('Thanks for adding ', add_my_fruit)
+#streamlit.write ('Thanks for adding ', add_my_fruit)
 
 #This will not work correctly, but just go with it for now
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
 
