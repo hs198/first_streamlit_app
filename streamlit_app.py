@@ -51,9 +51,6 @@ streamlit.dataframe(my_data_row)
   
 Allow the end user to add a fruit to the list
 
-import pandas
-add_my_fruit = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
-streamlit.dataframe(add_my_fruit)
 
 
 
