@@ -17,12 +17,12 @@ streamlit.dataframe(my_fruit_list)
 
 # Let's put a pick list here so they can pick the fruit they want to include 
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
+
 # Display the table on the page.
-import requests
-
+#mport requests
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+#treamlit.text(fruityvice_response)
 
-streamlit.text(fruityvice_response)
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 streamlit.text(fruityvice_response)
@@ -39,8 +39,7 @@ streamlit.text(fruityvice_response)
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 #streamlit.write('The user entered ', fruit_choice)
 
-#import snowflake.connector
-from urllib.error import URLError
+
 
 
 
