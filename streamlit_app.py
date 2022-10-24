@@ -26,6 +26,24 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 #treamlit.text(fruityvice_response)
 
+
+#New section to display fruityviceapi response
+streamlit.header('fruityvice fruit advice!')
+try:
+  fruit_choice = stremalit_input('what fruit would you like information about?')
+  if not fruit_choice:
+    streamlit.error("please select a fruit to get information.")
+    e;se:
+      fruityvice_response = requests.get(("https://fruityvice.com/api/fruit/' + fruit_choice)
+      fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+      streamlit.dataframe(fruityvice_normalized)
+      except URLError as e:
+      streamlit.error()
+                                          
+
+
+
+
 #import requests
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 #streamlit.text(fruityvice_response)
