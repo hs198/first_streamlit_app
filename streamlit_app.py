@@ -27,8 +27,8 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 #treamlit.text(fruityvice_response)
 
 #import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
-streamlit.text(fruityvice_response)
+#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
+#streamlit.text(fruityvice_response)
 
 #New Section to display fruitvice api response
 #streamlit.header("Fruityvice Fruit Advice!")
