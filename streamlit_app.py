@@ -23,18 +23,10 @@ streamlit.dataframe(my_fruit_list)
 #fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 
 # New section to dispaly  fruitvice api response
-# New section to dispaly  fruitvice api response
-streamlit.header('Fruityvice Fruit Advise!')
+Streamlut.header('Fruitvice Fruit Advise!')
 try:
-  fruit_choice = streamlit.text_input('What fruit would you like information about?')
-  if not fruit_choice:
-     streamlit.error("Please select a fruit to get information.")
-  else:
-      back_from_function = get_fruityvice_data(fruit_choice)
-      streamlit.dataframe(back_from_function)
-      
-except URLError as e:
-    streamlit.error()
+fruit_choice = streamlit.text_input('What fruit would you like information about?')
+
 
 
 
