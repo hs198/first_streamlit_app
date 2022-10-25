@@ -35,7 +35,8 @@ streamlit.dataframe(my_data_rows)
 add_my_fruit = streamlit.text_input('What fruit would you like add?')
 streamlit.write('Thanks for adding ', add_my_fruit)
 
-
+#This will not work correctly, but go with it for now
+my_cur.execute("insert into fruit__load_list values ('from streamlit')")
 
 # Display the table on the page.
 #mport requests
