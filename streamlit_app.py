@@ -20,7 +20,7 @@ streamlit.dataframe(my_fruit_list)
 
 # Let's put a pick list here so they can pick the fruit they want to include 
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
-
+fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
@@ -85,7 +85,7 @@ streamlit.text(my_data_row)
 # write your own comment - what does this do?
 #streamlit.dataframe(fruityvice_normalized)
 
-fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+
 #streamlit.write('The user entered ', fruit_choice)
 
 
