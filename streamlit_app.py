@@ -38,7 +38,7 @@ streamlit.dataframe(my_data_rows)
 
 import pandas
 add_my_fruit = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
-add_my_fruit = add_my_fruit.set_index('Fruit')
+add_my_fruit = add_my_fruit.set_index('jackfruit')
 
 #Let's put a pick ist here so they can pick the fruit they want to include
 streamlit.multiselect("Pick somefruits:",list(add_my_fruit.index))
