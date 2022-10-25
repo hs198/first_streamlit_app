@@ -70,7 +70,7 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 # write your own comment - what does this do?
 #streamlit.dataframe(fruityvice_normalized)
 
-fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+#fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 #streamlit.write('The user entered ', fruit_choice)
 
 
