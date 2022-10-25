@@ -22,6 +22,8 @@ streamlit.dataframe(my_fruit_list)
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 
+# don't run anything past here while we troubleshoot
+streamlit.stop()
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
