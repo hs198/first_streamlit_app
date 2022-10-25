@@ -41,7 +41,7 @@ add_my_fruit = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com
 add_my_fruit = add_my_fruit.set_index('Fruit')
 
 #Let's put a pick ist here so they can pick the fruit they want to include
-streamlit.multiselect("Pick somefruits:",list(add_my_fruit.index))
+streamlit.multiselect("what fruit would you like to add:",list(add_my_fruit.index))
 
 
 
