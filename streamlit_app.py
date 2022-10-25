@@ -23,13 +23,11 @@ streamlit.dataframe(my_fruit_list)
 #fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 
 # New section to dispaly  fruitvice api response
-Streamlut.header('Fruitvice Fruit Advise!')
-try:
-fruit_choice = streamlit.text_input('What fruit would you like information about?')
+# New section to dispaly  fruitvice api response
+# New section to dispaly  fruitvice api response
 
 
-
-
+	
 
 # don't run anything past here while we troubleshoot
 streamlit.stop()
