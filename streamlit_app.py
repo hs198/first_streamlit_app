@@ -100,7 +100,7 @@ return my_cur.fetchall()
 #my_cur = my_cnx.cursor()
 #my_cur.execute("SELECT * from fruit_load_list ")
 #my_data_rows = my_cur.fetchall()
-3streamlit.header("The fruit load list contains:")
+#streamlit.header("The fruit load list contains:")
 #streamlit.dataframe(my_data_rows)
 
  # Add a button to load the fruit
