@@ -34,14 +34,20 @@ streamlit.header("The fruit load list conatins:")
 streamlit.dataframe(my_data_rows)
 
 
+Import requests
+add_my_fruit = streamlit.text_input('What fruit would you like information about?','Kiwi')
+streamlit.write('The user entered ', fruit_choice)
+
+
+
 #Allow the end user to add a fruit to the list
 
-import pandas
-add_my_fruit = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
-add_my_fruit = add_my_fruit.set_index('Fruit')
+#import pandas
+#add_my_fruit = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+#add_my_fruit = add_my_fruit.set_index('Fruit')
 
 #Let's put a pick ist here so they can pick the fruit they want to include
-streamlit.multiselect("what fruit would you like to add:",list(add_my_fruit.index))
+#streamlit.multiselect("what fruit would you like to add:",list(add_my_fruit.index))
 
 
 
