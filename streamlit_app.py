@@ -35,7 +35,7 @@ streamlit.dataframe(my_data_rows)
 
 
 Import requests
-add_my_fruit = request.get("https://fruityvice.com/api/fruit/" +fruit_choice)
+add_my_fruit = requests.get("https://fruityvice.com/api/fruit/" +fruit_choice)
 
 
 
