@@ -25,9 +25,9 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT * from fuirt_load_list")
-my_data_rows = my_cur.fetchone()
-streamlit.text("The fruit load list contains:")
-streamlit.text(my_data_rows)
+my_data_rows = my_cur.fetchall()
+streamlit.header("The fruit load list contains:")
+streamlit.dataframe(my_data_rows)
 
 
 
