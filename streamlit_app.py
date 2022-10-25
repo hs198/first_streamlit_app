@@ -33,8 +33,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list conatins:")
 streamlit.dataframe(my_data_rows)
 
-
-Import requests
+import requests
 add_my_fruit = requests.get("https://fruityvice.com/api/fruit/" +fruit_choice)
 
 
